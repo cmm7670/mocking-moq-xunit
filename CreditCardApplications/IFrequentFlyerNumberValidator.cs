@@ -19,5 +19,6 @@ namespace CreditCardApplications
         // string LicenseKey { get; }
         IServiceInformation ServiceInformation { get; } // ServiceInformation can get to the LicenseKey property through the IServiceInformation property
         ValidationMode ValidationMode { get; set; }
+        event EventHandler ValidatorLookupPerformed;
     }
 }
